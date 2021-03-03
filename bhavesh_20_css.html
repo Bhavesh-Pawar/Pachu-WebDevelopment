@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Tutorial</title>
+    <style>
+        .item
+        {
+           
+            height: 75px;
+            width:75px;
+            margin: 6px;
+            padding: 5px;
+            background-color: red;
+            border: 3px solid black;
+        }
+        .container
+        {
+            margin: 10px;
+            padding: 6px;
+            height: 560px;
+            width: 100%;
+            border: 3px solid green;
+            display: flex;
+            flex-flow: wrap;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+           /* justify-content: space-between; */
+           /* justify-content: center; */
+           /* justify-content: space-evenly; */
+           justify-content: space-around;
+           align-items: center;
+           align-items: stretch;
+           
+        }
+        .notes
+        {
+            color:red;
+            font-size: 30px;
+            font: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="notes">
+        Align-items align the items according to given Value.(Imp) <br>
+        Flex-grow will increment the item size according to given value. <br>
+        order will decide the order of the items. ie Higher the order later it shows up on the screen. <br>
+        Shrink is inverse to the grow. <br>
+        Syntax of Flex:- <br>
+         &lt;grow&gt;  &lt;shrink&gt;  &lt;basis&gt; <br>
+         Flex-basis is done when:- <br>
+         direction &nbsp; changes in <br>
+         row->  &nbsp; width <br>
+         column->  &nbsp; height
+    </div>
+    <div class="container">
+
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Forth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+</body>
+</html>

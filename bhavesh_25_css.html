@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+    <style>
+        body{
+            
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            display: flex;
+
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+         section
+        {
+            /* border: 5px solid red; */
+            text-align: center;
+            height: 307px;
+            margin: 10px auto;
+            padding: 34px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       header::before{
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900');
+            position: absolute;
+            top: 0px;
+            left:0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        section::after
+        {
+            content: "This is new content";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+           <h1>
+            Welcome to Coding World
+           </h1> 
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere hic eveniet, a ducimus, repudiandae delectus illo suscipit enim id sequi, iste consequatur voluptatem!
+           </p>
+        </section>
+    </header>
+</body>
+</html>

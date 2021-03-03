@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and Set Interval</title>
+</head>
+<body>
+    <span id="time"> Time Now is : </span>
+    <script>
+    // function display() 
+    // {
+    //     console.log("Hello")
+    // }    
+    // Set Time Out
+    // let timeId=setTimeout(display,5000);
+    // clearTimeout(timeId);
+
+    // Set Interval => This will call function repeatedly
+    // This will show time and date after every 1 sec
+        function displayTime() 
+        {
+        document.getElementById('time').innerHTML= new Date();    
+        }
+        let intervalId=setInterval(displayTime, 1000);
+        // clearInterval(intervalId)
+    </script>
+</body>
+</html>

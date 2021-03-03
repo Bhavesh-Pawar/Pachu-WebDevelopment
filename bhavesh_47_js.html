@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listenerin JS</title>
+    <style>
+        #btn
+        {
+            padding: 10px 15px;
+            background-color: cyan;
+            font-weight: bold;
+            border-radius: 16px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi unde, dolor maxime non voluptates excepturi consequuntur labore aspernatur soluta. Consequuntur architecto veniam beatae impedit inventore culpa facilis. Iusto, mollitia excepturi consequuntur aspernatur nihil dolorum odio nisi quasi, illum hic enim! Itaque excepturi quam dolore neque nemo iusto dolorem. Aspernatur illo numquam mollitia laboriosam enim at saepe id sequi aliquid consequatur?</p>
+        <button id="btn" onclick="toggleHide()">
+            Show/Hide
+        </button>
+    </div>
+    <script>
+    
+        function toggleHide() 
+        {
+            let p=document.getElementById('para');
+            if ( p.style.display=='none') {
+                p.style.display ='block';
+            } else {
+                p.style.display ='none';
+            }
+        }
+
+        let p=document.getElementById('para');
+        p.addEventListener('onmouseover',function run() {
+        console.log("Mouse is on para")           
+        });
+
+        p.addEventListener('mousein',function run() {
+        console.log("Mouse is in para")           
+        });
+        p.addEventListener('mouseout',function run() {
+        console.log("Mouse is out of  para")           
+        });
+    </script>
+</body>
+</html>

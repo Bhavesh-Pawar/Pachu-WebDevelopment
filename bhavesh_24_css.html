@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and Nth Child</title>
+    <style>
+        /* li:nth-child(3)
+        {
+            color: red;
+        } */
+        /* li:nth-child(odd)
+        {
+            color: red;
+        } */
+        li:nth-child(even)
+        {
+            color: red;
+        }
+        input
+        {
+            display: block;
+        }
+        input[type='text']
+        {
+            border: 5px solid cyan;
+        }
+        input[type='email']
+        {
+            border: 5px solid gold;
+        }
+        a[target="_self"]
+        {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="container"> 
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <ul>
+                <li><a href="http://google.com" target="_blank">Go to Google</a></li>
+                <li><a href="http://facebook.com" target="_self">Go to FB</a></li>
+            </ul>
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li>forth</li>
+            <li>fifth</li>
+        </ul>
+    </div>
+</body>
+</html>

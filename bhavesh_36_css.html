@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Area with Media Queries</title>
+    <style>
+        @media only screen and (max-width: 350px) /* Mobiles */
+        {
+            body {
+                background-color: cyan;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section aside'
+                    'footer footer footer footer';
+                grid-gap: 1.1rem;
+            }
+            
+            nav {
+                display: block;
+            }
+        }
+
+        @media (max-width: 550px) and (min-width: 350px) /* Android phone*/
+         {
+            body {
+                background-color: rgb(135, 135, 219);
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+                grid-gap: 1.1rem;
+            }
+        }
+
+        @media (max-width: 850px) and (min-width: 550px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media (min-width: 850px) /* Desktop */ 
+        {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section aside'
+                    'footer footer footer footer';
+                grid-gap: 1.1rem;
+            }
+
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        /* .container
+        {
+            display: grid;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+            grid-gap: 1.1rem;
+        } */
+        .item {
+            border: 3px solid black;
+            padding: 10px 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <nav>Home About Services Contact Us</nav>
+        </nav>
+        <section class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate officiis, quae consectetur
+            adipisci, quis nisi magnam quasi unde saepe doloribus ipsum ullam nobis! Veritatis provident adipisci eum
+            tempore omnis?
+        </section>
+        <aside class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, pariatur!
+        </aside>
+    </div>
+    <footer class="item">
+        this is end.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        //Arrow Function
+        let half =a => a/2; //for single argument no paranthesis
+        let sum=(a,b)=>a+b;
+        let greet=() => console.log("Hello");
+        let obj =
+        {
+            greet:"Hello",
+            name:["bhavesh","kushal"],
+            greeting()
+            {
+          this.name.forEach(element => {
+              console.log(this.greet+" "+element)
+          });
+        }
+            }
+            
+        obj.greeting();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        
+        .container
+        {
+            border: 3px solid blue;
+            height: 3000px;
+        }
+        .box
+        {
+            border: 3px solid rgb(139, 29, 14);
+            display: inline-block;
+            width: 250px;
+            height: 250px;
+            padding: 3px;
+            margin: 3px;
+        }
+        #box3
+        {
+            /* position: relative;
+            top: 25px;
+            left:150px; */
+            /* position: absolute;
+             top: 0px;
+            left:0px;   */
+             position: fixed;
+            right: 60px;
+             top: 10px; 
+            /* position: sticky;
+            top: 15px;
+            left: 25px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>
+            POSITIONS IN CSS:- <br>
+            <ul>
+                <li>Relative</li>
+                <li>Fixed</li>
+                <li>Absolute</li>
+                <li>Sticky</li>
+            </ul>
+        </h3>
+    </div>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

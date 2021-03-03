@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+        }
+
+        /* div p{
+            background-color: black;
+            color: white;
+        } */
+        /* div > p{
+            background-color: turquoise;
+            color: darkred;
+        } */
+        div+p {
+            background-color: deepskyblue;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a heading</h1>
+    <div>
+        <ul>
+            <li>
+                <p>This is a paragraph</p>
+            </li>
+            <li>
+                <p>This is a paragraph</p>
+            </li>
+            <li>
+                <p>This is a paragraph</p>
+            </li>
+            <li>
+                <p>This is a paragraph</p>
+            </li>
+        </ul>
+        <div>
+            <p>
+                This is a single paragraph.This is affected.
+            </p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>
+        This is outermost paragraph.
+    </p>
+</body>
+
+</html>

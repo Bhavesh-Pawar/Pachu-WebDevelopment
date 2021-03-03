@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and  KeyFrames</title>
+    <style>
+        .container
+        {
+        background-color:yellow;
+        }
+        .box
+        {
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            animation-name: bhav;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            position: relative;
+            animation-direction: reverse;
+            animation-delay: 2s;
+        }
+        @keyframes bhav {
+            /* from
+            {
+                width: 100px;
+            }
+    to
+ {
+    width: 250px;
+ }             */
+ 0%
+ {
+    top: 0px; left: 0px;
+ }
+ 25%
+ {
+top: 0px; left: 250px;
+ }
+ 75%
+ {
+ top :250px; left: 250px;
+ }
+100%
+{
+top: 250px; left: 0px;
+}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

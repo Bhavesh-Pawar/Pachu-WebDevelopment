@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <script>
+        let jsonObj={
+            name:"bhavesh",
+            salary:"15000",
+            sem :"5th"}
+            // Stringify converts into string
+        let newJsonObj=JSON.stringify(jsonObj);
+        
+         newJsonObj=newJsonObj.replace('5th','6th');
+
+        console.log(newJsonObj);
+        //parse converts string into Json,Otherwise it will show errors.
+        let newJsonObj2 = JSON.parse(newJsonObj);
+        console.log(newJsonObj2);
+    </script>
+</body>
+</html>

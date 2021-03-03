@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        #fruit
+        {
+            float: right;
+            width: 48%;
+        }
+        #computer
+        {
+            clear:left;
+            width: 48%;
+        }
+        #stationary
+        {
+            width: 48%;
+            clear: both;
+        }
+        #glass
+        {
+            width: 90%;
+            /* float: right; */
+            clear: right;
+            padding: 15px;
+        }
+       .container
+       {
+           border: 3px solid red;
+           background-color: sandybrown;
+           margin: 15px auto;
+           width: 900px;
+
+       }
+       .item
+       {
+        font-family: 'Yeon Sung', cursive;
+         background-color: rgb(135, 216, 236);
+           border: 3px solid green;
+           margin: 10px;
+           padding-left: 5px;
+           width: 200px;
+       }
+       h1{
+           margin: auto;
+           font-family: 'Yeon Sung', cursive;
+       }
+       p,h3
+       {
+           text-align: justify;
+       }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <center>
+        <h1>Welcome to Store</h1>
+
+    </center>  
+    <div id="fruit" class="item">
+        <h3>Fruits</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod enim placeat asperiores omnis voluptate. Quidem ipsum veniam, pariatur veritatis nam praesentium explicabo nihil consequatur!           
+        </p>
+    </div>
+    <div id="computer" class="item">
+        <h3>Computer</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod enim placeat asperiores omnis voluptate. Quidem ipsum veniam, pariatur veritatis nam praesentium explicabo nihil consequatur!        
+        </p>
+    </div>
+    <div id="glass" class="item">
+        <h3>Glass</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod enim placeat asperiores omnis voluptate. Quidem ipsum veniam, pariatur veritatis nam praesentium explicabo nihil consequatur!        
+        </p>
+    </div>
+    <div id="stationary" class="item">
+        <h3>Stationary</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod enim placeat asperiores omnis voluptate. Quidem ipsum veniam, pariatur veritatis nam praesentium explicabo nihil consequatur!        
+        </p>
+    </div>
+  </div>  
+</body>
+</html>

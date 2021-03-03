@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden and Z-index</title>
+    <style>
+        .box
+        {
+            display: inline-block;
+            height: 174px;
+            width: 174px;
+            border: 3px solid black;
+        }
+        #box1
+        {
+          /* it doesnt make empty space  */
+            /* display: none;  */
+              /* visibility: hidden;  it makes empty space  */
+            background-color: red;
+            position: relative;
+            left: 30px;
+            z-index: 31;
+        }
+        #box2
+        {
+            background-color: green;
+            position: relative;
+            top: 15px;
+            z-index: 30;
+        }
+        #box3
+        {
+            background-color: greenyellow;
+            
+        }
+        #box4
+        {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
